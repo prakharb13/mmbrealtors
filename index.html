@@ -8,6 +8,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    @keyframes moveLeft {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .stats-marquee {
+      display: inline-flex;
+      animation: moveLeft 15s linear infinite;
+    }
+  </style>
 </head>
 <body class="font-roboto text-gray-800">
   <header class="bg-gray-800 text-white py-4 shadow-md">
@@ -44,7 +54,25 @@
             </figure>
             <p class="text-gray-600 text-sm">All sales are subject to acceptance by the Company based on price and availability.</p>
           </div>
-            
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-blue-400 text-white py-4 overflow-hidden">
+      <div class="stats-marquee w-full">
+        <div class="flex items-center space-x-8">
+          <div class="text-lg font-semibold whitespace-nowrap">• 5+ Properties Sold</div>
+          <div class="text-lg font-semibold whitespace-nowrap">• 150 Happy Clients Served</div>
+          <div class="text-lg font-semibold whitespace-nowrap">• 10 Years of Real Estate Experience</div>
+          <div class="text-lg font-semibold whitespace-nowrap">• NCR's Trusted Prestige Group Authorized Sales Partner</div>
+          <div class="text-lg font-semibold whitespace-nowrap">• Top-Rated Real Estate Consultants</div>
+          
+          {/* Duplicate for seamless looping */}
+          <div class="text-lg font-semibold whitespace-nowrap">• 50+ Properties Sold</div>
+          <div class="text-lg font-semibold whitespace-nowrap">• 150 Happy Clients Served</div>
+          <div class="text-lg font-semibold whitespace-nowrap">• 10 Years of Real Estate Experience</div>
+          <div class="text-lg font-semibold whitespace-nowrap">• NCR's Trusted Prestige Group Authorized Sales Partner</div>
+          <div class="text-lg font-semibold whitespace-nowrap">• Top-Rated Real Estate Consultants</div>
         </div>
       </div>
     </section>
