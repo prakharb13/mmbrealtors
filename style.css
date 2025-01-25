@@ -1,70 +1,223 @@
-/* Custom CSS styles */
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: sans-serif;
-    background-color: #f0f0f0; /* Light gray background for the body */
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f7f6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Navigation Styles */
+nav {
+  background-color: #2c3e50;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-menu li {
+  margin-left: 1.5rem;
+}
+
+.nav-menu a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover, .nav-menu a.active {
+  color: #3498db;
+}
+
+.contact-btn {
+  background-color: #3498db;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive Menu Toggle */
+.menu-toggle, .menu-icon {
+  display: none;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.7)), url('img/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 6rem 2rem;
+  margin-top: 60px;
+}
+
+.hero-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #3498db;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #2980b9;
+}
+
+/* About Section */
+.about-section .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Projects Section */
+.projects-section {
+  background-color: #fff;
+  padding: 3rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.prestige-partner {
+  text-align: center;
+}
+
+.prestige-partner figure {
+  margin-top: 1rem;
+}
+
+.prestige-partner img {
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.prestige-partner figcaption {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.disclaimer {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #3498db;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #2c3e50;
+    padding: 1rem;
   }
-  
-  .container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 2rem; /* Add some padding around the content */
+
+  .menu-icon {
+    display: block;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
   }
-  
-  nav {
-    background-color: #333; /* Dark background for the navigation bar */
-    color: #fff; /* White text for the navigation bar */
-    padding: 1rem 0;
-  }
-  
-  nav ul {
-    list-style: none;
+
+  .menu-toggle:checked ~ .nav-menu {
     display: flex;
-    justify-content: space-between;
   }
-  
-  nav li {
-    margin: 0 1rem;
+
+  .about-section .grid {
+    grid-template-columns: 1fr;
   }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
+
+  .hero h1 {
+    font-size: 2rem;
   }
-  
-  h2 {
-    color: #333; /* Dark gray for headings */
-  }
-  
-  h3 {
-    color: #555; /* Lighter gray for subheadings */
-  }
-  
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 2rem;
-  }
-  
-  figure {
-    margin: 0;
-    text-align: center; /* Center the image within the figure */
-  }
-  
-  figure img {
-    max-width: 100%; /* Make the image responsive */
-    height: auto;
-  }
-  
-  .disclaimer {
-    color: #888;
-    font-size: 0.8rem;
-    margin-top: 1rem;
-  }
-  
-  /* Add some basic styling for the footer */
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-  }
+}

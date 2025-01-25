@@ -1,51 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MMB Realtors</title>
+  <title>MMB Realtors - Your Dream Property Awaits</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <nav class="container-fluid">
-    <ul>
-      <li><strong>MMB Realtors</strong></li>
-    </ul>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact" role="button">Contact</a></li>
-    </ul>
-  </nav>
+  <header>
+    <nav class="container-fluid">
+      <div class="nav-wrapper">
+        <div class="logo">
+          <strong>MMB Realtors</strong>
+        </div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <ul class="nav-menu">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact" class="contact-btn">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
   <main class="container">
-    <div class="grid">
-      <section> 
-        <hgroup>
-          <h2>Welcome to MMB Realtors</h2>
-        </hgroup>
-        <p>At MMB Realtors, we connect you with the best properties to match your dreams. From luxurious homes
-          to commercial spaces, we make it happen!</p>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Discover Your Perfect Property</h1>
+        <p>At MMB Realtors, we turn your real estate dreams into reality. Expert guidance, exceptional properties.</p>
+        <a href="#contact" class="cta-button">Get Started</a>
+      </div>
+    </section>
 
-        <h2>NCR Projects</h2>
+    <section id="about" class="about-section">
+      <h2>About MMB Realtors</h2>
+      <div class="grid">
+        <div class="about-text">
+          <p>We are dedicated to helping you find the perfect property. With years of experience in the NCR real estate market, our team provides personalized service and expert guidance.</p>
+          <p>Whether you're looking for a luxurious home or a prime commercial space, MMB Realtors is your trusted partner.</p>
+        </div>
+        <div class="about-image">
+          <img src="img/about-mmb.jpg" alt="MMB Realtors Team">
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+      <h2>NCR Projects</h2>
+      <div class="prestige-partner">
         <h3>Prestige Group Authorized Sales Partner</h3>
         <figure>
           <img src="img/Prestige Group Auth Sales Partner.jpeg" alt="Authorized Sales Partner - Man Mohan Bansal">
-          <figcaption>Contact: Man Mohan Bansal, +91 9211788039</figcaption>
+          <figcaption>
+            <strong>Man Mohan Bansal</strong>
+            <span>Contact: +91 9211788039</span>
+          </figcaption>
         </figure>
-        <p>All sales are subject to acceptance by the Company based on price and availability.</p>
-      </section>
-    </div>
+        <p class="disclaimer">All sales are subject to acceptance by the Company based on price and availability.</p>
+      </div>
+    </section>
   </main>
 
   <footer class="container">
-    <small>
-      <a href="#">Privacy Policy</a> • 
-      <a href="#">Terms of Service</a>
-    </small>
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+      <div class="footer-contact">
+        <p>© 2024 MMB Realtors. All Rights Reserved.</p>
+        <p>Email: info@mmbrealtors.com</p>
+      </div>
+    </div>
   </footer>
 </body>
-
 </html>
