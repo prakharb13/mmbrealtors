@@ -2,78 +2,75 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MMB Realtors - Your Dream Property Awaits</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.16/tailwind.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-  <header>
-    <nav class="container-fluid">
-      <div class="nav-wrapper">
-        <div class="logo">
-          <strong>MMB Realtors</strong>
-        </div>
-        <input type="checkbox" id="menu-toggle" class="menu-toggle">
-        <label for="menu-toggle" class="menu-icon">&#9776;</label>
-        <ul class="nav-menu">
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact" class="contact-btn">Contact</a></li>
+<body class="font-roboto text-gray-800">
+  <header class="bg-gray-800 text-white py-4 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="text-2xl font-bold">MMB Realtors</div>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#" class="hover:text-blue-400">Home</a></li>
+          <li><a href="#about" class="hover:text-blue-400">About</a></li>
+          <li><a href="#properties" class="hover:text-blue-400">Properties</a></li>
+          <li><a href="#contact" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">Contact</a></li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
 
-  <main class="container">
-    <section id="about" class="about-section">
-      <h2>About MMB Realtors</h2>
-      <div class="grid">
-        <div class="about-image">
-          <img src="img/about-mmb.jpg" alt="MMB Realtors Team">
-        </div>
-        <div class="about-text">
-          <p>We are dedicated to helping you find the perfect property. With years of experience in the NCR real estate market, our team provides personalized service and expert guidance.</p>
-          <p>Whether you're looking for a luxurious home or a prime commercial space, MMB Realtors is your trusted partner.</p>
+  <main>
+    <section id="about" class="py-20">
+      <div class="container mx-auto">
+        <h2 class="text-4xl font-bold mb-6">About MMB Realtors</h2>
+        <p class="text-lg mb-6">We are dedicated to helping you find the perfect property. With years of experience in the NCR real estate market, our team provides personalized service and expert guidance.</p>
+        <p class="text-lg">Whether you're looking for a luxurious home or a prime commercial space, MMB Realtors is your trusted partner.</p>
+      </div>
+    </section>
+
+    <section id="properties" class="bg-gray-100 py-20">
+      <div class="container mx-auto">
+        <h2 class="text-4xl font-bold mb-8">NCR Projects</h2>
+        <div class="flex items-start">
+          <div class="w-1/2 pr-8">
+            <figure>
+              <img src="img/Prestige Group Auth Sales Partner.jpeg" alt="Authorized Sales Partner - Man Mohan Bansal" class="rounded-lg shadow-lg">
+              <figcaption class="mt-4 text-center">
+                <h3 class="font-bold">Man Mohan Bansal</h3>
+                <p>Contact: +91 9211788039</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="w-1/2">
+            <h3 class="text-2xl font-bold mb-4">Prestige Group Authorized Sales Partner</h3>
+            <p class="text-gray-600 text-sm">All sales are subject to acceptance by the Company based on price and availability.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="hero">
-      <div class="hero-content">
-        <h1>Discover Your Perfect Property</h1>
-        <p>At MMB Realtors, we turn your real estate dreams into reality. Expert guidance, exceptional properties.</p>
-        <a href="#contact" class="cta-button">Get Started</a>
-      </div>
-    </section>
-
-    <section id="projects" class="projects-section">
-      <h2>NCR Projects</h2>
-      <div class="prestige-partner">
-        <h3>Prestige Group Authorized Sales Partner</h3>
-        <figure>
-          <img src="img/Prestige Group Auth Sales Partner.jpeg" alt="Authorized Sales Partner - Man Mohan Bansal">
-          <figcaption>
-            <strong>Man Mohan Bansal</strong>
-            <span>Contact: +91 9211788039</span>
-          </figcaption>
-        </figure>
-        <div class="project-details">
-          <p class="disclaimer">All sales are subject to acceptance by the Company based on price and availability.</p>
-        </div>
+    <section id="contact" class="bg-gray-800 text-white py-20">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-4">Get in Touch</h2>
+        <p class="text-lg mb-8">Contact us to learn more about our services and properties.</p>
+        <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white py-3 px-6 rounded-lg">Contact Us</a>
       </div>
     </section>
   </main>
 
-  <footer class="container">
-    <div class="footer-content">
-      <div class="footer-links">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto flex justify-between items-center">
+      <div>
+        <p>&copy; 2024 MMB Realtors. All Rights Reserved.</p>
       </div>
-      <div class="footer-contact">
-        <p>© 2024 MMB Realtors. All Rights Reserved.</p>
+      <div>
+        <a href="#" class="mr-4 hover:text-blue-400">Privacy Policy</a>
+        <a href="#" class="hover:text-blue-400">Terms of Service</a>
       </div>
     </div>
   </footer>
