@@ -1,70 +1,70 @@
 /* Custom CSS styles */
 body {
-    font-family: sans-serif;
-    background-color:#f0f0f0; /* Light gray background for the body */
-  }
-  
-  .container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 2rem; /* Add some padding around the content */
-  }
-  
-  nav {
-    background-color: #333; /* Dark background for the navigation bar */
-    color: #fff; /* White text for the navigation bar */
-    padding: 1rem 0;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  nav li {
-    margin: 0 1rem;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  h2 {
-    color: #333; /* Dark gray for headings */
-  }
-  
-  h3 {
-    color: #555; /* Lighter gray for subheadings */
-  }
-  
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 2rem;
-  }
-  
-  figure {
-    margin: 0;
-    text-align: center; /* Center the image within the figure */
-  }
-  
-  figure img {
-    max-width: 100%; /* Make the image responsive */
-    height: auto;
-  }
-  
-  .disclaimer {
-    color: #888;
-    font-size: 0.8rem;
-    margin-top: 1rem;
-  }
-  
-  /* Add some basic styling for the footer */
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-  }
+font-family: sans-serif;
+background-color:#f0f0f0; /* Light gray background for the body */
+}
+
+.container {
+max-width: 960px;
+margin: 0 auto;
+padding: 2rem; /* Add some padding around the content */
+}
+
+nav {
+background-color: #333; /* Dark background for the navigation bar */
+color: #fff; /* White text for the navigation bar */
+padding: 1rem 0;
+}
+
+nav ul {
+list-style: none;
+display: flex;
+justify-content: space-between;
+}
+
+nav li {
+margin: 0 1rem;
+}
+
+nav a {
+color: #fff;
+text-decoration: none;
+}
+
+h2 {
+color: #333; /* Dark gray for headings */
+}
+
+h3 {
+color: #555; /* Lighter gray for subheadings */
+}
+
+.grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+grid-gap: 2rem;
+}
+
+figure {
+margin: 0;
+text-align: center; /* Center the image within the figure */
+}
+
+figure img {
+max-width: 100%; /* Make the image responsive */
+height: auto;
+}
+
+.disclaimer {
+color: #888;
+font-size: 0.8rem;
+margin-top: 1rem;
+}
+
+/* Add some basic styling for the footer */
+footer {
+background-color: #333;
+color: #fff;
+padding: 1rem 0;
+text-align: center;
+}
